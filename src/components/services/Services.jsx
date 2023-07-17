@@ -18,7 +18,7 @@ const Services = () => {
           sd bdsbds dbhsbs
         </span>
         <button className="button s-button">Download CV</button>
-        <div className="blur s-blur" style={{ background: "#ABF1FF94" }}></div>
+        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/*right side */}
       <div className="cards">
@@ -46,6 +46,10 @@ const Services = () => {
             detail={"Figma, Adobe XD"}
           />
         </div>
+        <div
+          className="blur s-blur2"
+          style={{ background: "var(--purple)" }}
+        ></div>
       </div>
     </div>
   );
