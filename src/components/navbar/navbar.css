@@ -2,11 +2,14 @@
   height: 10vh;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
 }
 
 .n-left {
   flex: 1;
   align-items: center;
+  justify-content: left;
   display: flex;
   gap: 2rem;
 }
@@ -20,7 +23,7 @@
   display: flex;
   flex: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-weight: 400;
 }
 
@@ -32,9 +35,23 @@
   display: flex;
   gap: 2rem;
   margin-right: 4rem;
+  cursor: pointer;
 }
 
-.n-list > ul > li:hover {
+.n-list > ul :hover {
   cursor: pointer;
   color: var(--orange);
+}
+
+.n-button{
+  flex: 2;
+}
+
+@media screen and (max-width:480px){
+  .n-list{
+    display: none;
+  }
+  .n-button{
+    display: none;
+  }
 }
