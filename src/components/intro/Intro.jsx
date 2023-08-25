@@ -10,13 +10,17 @@ import Thumbup from "../../assets/img/thumbup.png";
 import Crown from "../../assets/img/crown.png";
 import Glassesimoji from "../../assets/img/glassesimoji.png";
 import FloatingDiv from "../floatingDiv/FloatingDiv";
+import { themeContext } from "../../Context"; 
+import { useContext } from "react";
 
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hi! I Am</span>
+          <span style={{color: darkMode?'white':''}}>Hi! I Am</span>
           <span>Deelaka Wejith</span>
           <span>
             Frontend Developer with high level of experience in web designing
