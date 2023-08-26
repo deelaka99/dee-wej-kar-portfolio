@@ -93,7 +93,7 @@
 @media screen and (max-width: 480px){
   .works{
     flex-direction: column;
-    height: 55rem;
+    height: 25rem;
     padding: 0;
     gap: 5rem;
   }
@@ -108,5 +108,11 @@
   }
   .w-backCircle{
     left: 8rem!important;
+  }
+  .w-mainCircle{
+    display: none;
+  }
+  .w-backCircle{
+    display: none;
   }
 }

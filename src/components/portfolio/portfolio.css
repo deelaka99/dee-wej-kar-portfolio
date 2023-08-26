@@ -39,3 +39,17 @@
     filter: drop-shadow(-12px 15px 13px rgba(0,0,0,0.25));
     border-radius: 19px;
 }
+
+@media screen and (max-width:480px){
+    .portfolio-slider .swiper-slide{
+        width: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio img{
+        width: 10rem;
+        
+        
+    }
+  }

@@ -1,10 +1,10 @@
 import React from "react";
 import "./portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Sidebar from "../../assets/img/sidebar.png";
-import Ecommerce from "../../assets/img/ecommerce.png";
-import HOC from "../../assets/img/hoc.png";
-import MusicApp from "../../assets/img/musicapp.png";
+import Fit360 from "../../assets/img/1.png";
+import DTM from "../../assets/img/2.png";
+import RMS from "../../assets/img/3.png";
+import Glamour360 from "../../assets/img/4.png";
 import "swiper/css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
@@ -26,16 +26,16 @@ function Portfolio() {
             className="portfolio-slider"
             >
           <SwiperSlide>
-            <img src={Sidebar} />
+            <img src={Fit360} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Ecommerce} />
+            <img src={DTM} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={HOC} />
+            <img src={RMS} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={MusicApp} />
+            <img src={Glamour360} />
           </SwiperSlide>
         </Swiper>
       </div>

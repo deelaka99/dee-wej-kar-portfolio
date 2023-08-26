@@ -34,10 +34,10 @@ const Intro = () => {
         <button className="button i-button">Hire me</button>
         </Link>
         <div className="i-icons">
-          <a href="">
+          <a href="https://github.com/deelaka99">
             <img src={Github} alt="github" />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/deelaka-wejith-kariyawasam-7a9bb0213/">
             <img src={LinkedIn} alt="linkedin" />
           </a>
           <a href="">

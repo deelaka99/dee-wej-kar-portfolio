@@ -12,6 +12,10 @@ const Services = () => {
   const transition = { duration: 1, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const openGoogleLink = () => {
+    window.open("https://drive.google.com/file/d/1QmLyTNrT58uQjBIN1mzVycU1lEIiVvpr/view?usp=drive_link", "_blank");
+  };
+
   return (
     <div className="services" id="Services">
       {/*left side */}
@@ -26,7 +30,7 @@ const Services = () => {
           <br />
           sd bdsbds dbhsbs
         </span>
-        <button className="button s-button">Download CV</button>
+        <button className="button s-button" onClick={openGoogleLink}>Download CV</button>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/*right side */}
