@@ -1,9 +1,18 @@
 .n-wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
   height: 10vh;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
   top: 0;
+  left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 1000;
+  border-bottom: 1px solid orange;
+  
 }
 
 .n-left {
@@ -43,11 +52,21 @@
   color: var(--orange);
 }
 
+.btn-holder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 .n-button{
   flex: 2;
 }
 
 @media screen and (max-width:480px){
+  .n-wrapper{
+    border: none;
+  }
   .n-list{
     display: none;
   }

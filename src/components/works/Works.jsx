@@ -21,13 +21,9 @@ const Works = () => {
         </span>
         <span>Brands & Clients</span>
         <span>
-          Lorem jnnjdf hffb hdfbhd fd ddd s ds
-          <br />
-          sd bdsbds dbhsbs
-          <br />
-          Lorem jnnjdf hffb hdfbhd fd ddd s ds
-          <br />
-          sd bdsbds dbhsbs
+          Proudly served a diverse portfolio of renowned brands and satisfied
+          clients, delivering exceptional results and fostering lasting
+          partnerships.
         </span>
         <button className="button s-button">Hire me</button>
         <div className="blur s-blur" style={{ background: "#ABF1FF94" }}></div>
@@ -37,8 +33,8 @@ const Works = () => {
         <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
-          viewport={{margin:'-40px'}}
-          transition={{duration:3.5, type:'spring'}}
+          viewport={{ margin: "-40px" }}
+          transition={{ duration: 3.5, type: "spring" }}
           className="w-mainCircle"
         >
           <div className="w-secCircle">

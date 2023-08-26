@@ -33,7 +33,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="Contact">
       <div className="w-left">
         <div className="awesome">
           <span style={{color:darkMode?'white':''}}>Get in touch</span>
@@ -50,15 +50,15 @@ function Contact() {
             type="text"
             name="user_name"
             className="user"
-            placeholder="Name"
+            placeholder="Name" style={{background:darkMode ?"#444444":"",color:darkMode?"white":""}}
           />
           <input
             type="email"
             name="user_email"
             className="user"
-            placeholder="Email"
+            placeholder="Email" style={{background:darkMode ?"#444444":"",color:darkMode?"white":""}}
           />
-          <textarea name="message" className="user" placeholder="Message" />
+          <textarea name="message" className="user" placeholder="Message"  style={{background:darkMode ?"#444444":"",color:darkMode?"white":""}}/>
           <input type="submit" value="Send" className="button" />
           <span>{done && "Thanks for contactin me!"}</span>
           <div

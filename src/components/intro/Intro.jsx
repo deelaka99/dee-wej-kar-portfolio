@@ -13,14 +13,14 @@ import FloatingDiv from "../floatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Intro = () => {
   const transition = { duration: 2, type: "spring" };
-
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="intro">
+    <div className="intro" id="Intro">
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>Hi! I Am</span>
@@ -30,7 +30,9 @@ const Intro = () => {
             and development, producting the Quality work
           </span>
         </div>
+        <Link spy={true} to="Contact" smooth={true}>
         <button className="button i-button">Hire me</button>
+        </Link>
         <div className="i-icons">
           <a href="">
             <img src={Github} alt="github" />

@@ -10,17 +10,17 @@ const Experience = () => {
     <div className='experience' id='Experience'>
       <div className="achievement">
         <div className="circle" style={{color:darkMode?'black':''}}>4+</div>
-        <span>Years</span>
+        <span style={{color:darkMode?'white':''}}>Years</span>
         <span>Experience</span>
       </div>
       <div className="achievement">
         <div className="circle" style={{color:darkMode?'black':''}}>4+</div>
-        <span>Completed</span>
+        <span style={{color:darkMode?'white':''}}>Completed</span>
         <span>Projects</span>
       </div>
       <div className="achievement">
         <div className="circle" style={{color:darkMode?'black':''}}>2+</div>
-        <span>Companies</span>
+        <span style={{color:darkMode?'white':''}}>Companies</span>
         <span>Work</span>
       </div>
     </div>

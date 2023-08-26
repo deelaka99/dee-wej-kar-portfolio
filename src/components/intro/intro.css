@@ -113,7 +113,7 @@
 @media screen and (max-width:480px){
   .intro{
     flex-direction: column;
-    height: 64rem;
+    height: 80rem;
     gap: 7rem;
   }
 

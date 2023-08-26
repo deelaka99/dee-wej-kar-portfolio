@@ -9,7 +9,7 @@ import { useContext } from "react";
 import { motion } from "framer-motion";
 
 const Services = () => {
-  const transition = {duration:1, type:'spring'}
+  const transition = { duration: 1, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -19,7 +19,10 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
         <span>
-          Lorem jnnjdf hffb hdfbhd fd ddd s ds
+          Proficient web developer with a passion for crafting dynamic and
+          user-friendly websites. Experienced in HTML, CSS, JavaScript, and
+          responsive design. Committed to creating seamless digital experiences
+          that engage and delight users.
           <br />
           sd bdsbds dbhsbs
         </span>
@@ -30,7 +33,7 @@ const Services = () => {
       <div className="cards">
         {/**1st card */}
         <motion.div
-          initial={{ left: "25rem"}}
+          initial={{ left: "25rem" }}
           whileInView={{ left: "14rem" }}
           transition={transition}
           style={{ left: "14rem" }}
@@ -46,12 +49,18 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"HTML, CSS, JavaScript, PHP, Bootstrap, TailwindCSS, ReactJS, Laravel"}
+            detail={
+              "HTML, CSS, JavaScript, PHP, Bootstrap, TailwindCSS, ReactJS, Laravel"
+            }
           />
         </div>
         {/*3rd card */}
         <div style={{ top: "19rem", left: "12rem" }}>
-          <Card emoji={Humble} heading={"UI/UX"} detail={"Figma, Adobe Photoshop, Adobe illustrator, Adobe XD"} />
+          <Card
+            emoji={Humble}
+            heading={"UI/UX"}
+            detail={"Figma, Adobe Photoshop, Adobe illustrator, Adobe XD"}
+          />
         </div>
         <div
           className="blur s-blur2"
